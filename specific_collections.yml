@@ -1,0 +1,18 @@
+# Mongo-Sync Include/Exclude Specific Collections
+include:
+  collections: 'UniqueUser'
+  mongodump:
+    attribute: '--collection'
+  mongorestore:
+    attribute: '--nsInclude'
+
+exclude:
+  collections: 'AirTravelEmissionCalculation, Assessment, AssessmentQuestions, AssessmentRatings, AssessmentResponse, BISNotificationDetails, CompanyMaster, CompanyPeers, CompanyRelationship, CountryCity, EmailNotifications, EmissionCalculation, EmissionCalculatorConfig, EvaluationCriteriaMaster, EvaluationQuestionMaster, EvaluationTypeMaster, EvalutionFormAssigneeMaster, EvalutionFormAssigneeStatus, EvalutionFormSetupMaster, ExternalDataStatusFlags, ForgotPassword, LoggerModel, PasswordBackup, PredefinedTasks, RatioValues, Recipient, ResourceMaster, ResourceMaster_06122021, ResourceMaster_20-12-21, ResourceMaster_6-12-2021, RoadmapReview, RoadmapTasks, RoleMaster, Sharer, SmsConfiguration, SmsNotifications, UINotification, UniqueUser, UpsiMaster, UserMaster, UserTokenSession, acl_resources, auditLog, audit_logs, cisco_access_token, cisco_meeting, cisco_meeting_recording, cisco_meeting_recording_is_available, companyConfigs, configuration, counters, device_tokens, document_annotation, document_annotation-sharedfromIPAD, file_detail_configuration, gfm_record, gfm_tags, meeting_attendance, minutes_of_meeting, mom_task, regular_meeting, reimbursement, smtpDetails, user_authentication, votes, xCompanyNews, xEquity_52whl, xQuarterly_MM, xbse_price, xcompany_equity, xfinance_bs, xfinance_fr, xfinance_pl, xnse_price'
+  mongodump:
+    attribute: '--excludeCollection'
+  mongorestore:
+    attribute: '--nsExclude'
+
+diff_checker:
+  temp_directory_path: 'temp' 
+  skip_collections: 'xnse_price, xCompanyNews, xEquity_52whl, xQuarterly_MM, xbse_price, xcompany_equity, xfinance_bs, xfinance_fr, xfinance_pl, xnse_pric, meeting_attendanc, audit_logs, UserTokenSession, SmsNotifications, UINotification, LoggerModel, EmailNotifications, ExternalDataStatusFlags, cisco_meeting, document_annotation'

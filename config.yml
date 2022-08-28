@@ -1,0 +1,31 @@
+# Mongo-Sync Configurations
+
+local:
+  db: 'Goveva_v1'
+  host:
+    url: '127.0.0.1'
+    port: 27017
+  access:
+    username: ''
+    password: ''
+
+remote:
+  db: 'Goveva_v1'
+  host:
+    url: '3.111.60.163'
+    port: 27148
+  access:
+    username: ''
+    password: ''
+
+tunnel:
+  on: false
+  access:
+    username: 'remote_ssh_user'
+    port: 22
+
+# For now :local just
+# assumes DB is at localhost:port
+
+# All of the parameters above are required,
+# without them, the script will fail

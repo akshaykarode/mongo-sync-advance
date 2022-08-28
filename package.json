@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "mongodb": "^4.9.0"
+  }
+}
