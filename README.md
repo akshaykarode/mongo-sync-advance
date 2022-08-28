@@ -1,4 +1,4 @@
-## Goveva Users
+## Users
 Setup Local
 1. Install MongoDB tools. // https://www.mongodb.com/docs/database-tools/installation/installation-macos/
 2. $ docker pull mongo:4.2
@@ -8,27 +8,20 @@ Setup Local
 
 Ref : https://www.code4it.dev/blog/run-mongodb-on-docker
 
-
-[mongo-sync](https://sheharyar.me/blog/sync-mongodb-local-and-production-heroku/)
 =================================================================================
 
-> _Sync Remote and Local MongoDB Databases in Bash. Works with Heroku too!_
-
-For all the Rubyists out there, I've converted this in to a [Ruby Gem](https://github.com/sheharyarn/mongo-sync-ruby) as well.
-
-![mongo-sync demo gif](http://i.imgur.com/hg6hwLk.gif)
-
+> Inspired by : https://github.com/sheharyarn/mongo-sync
 
 ## Usage
 
 - Download / Clone the script
 
     ```bash
-    git clone https://github.com/sheharyarn/mongo-sync.git
-    cd mongo-sync
+    git clone https://github.com/akshaykarode/mongo-sync-advance.git
+    cd mongo-sync-advance
     ```
 
-- Edit `config.yml` and insert your configuration details
+- Edit `config.yml`, `specific_collections.yml` and as per your requirement
 
 - Use the script like this:
 	
@@ -59,7 +52,7 @@ For all the Rubyists out there, I've converted this in to a [Ruby Gem](https://g
 
 ## Contributing
 
-1. [Fork it](https://github.com/sheharyarn/mongo-sync/fork)
+1. [Fork it](https://github.com/akshaykarode/mongo-sync-advance/fork)
 2. Create your feature/fix branch (`git checkout -b feature/my-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin feature/my-feature`)
@@ -68,7 +61,7 @@ For all the Rubyists out there, I've converted this in to a [Ruby Gem](https://g
 
 ## License
 
-Copyright (c) 2015 Sheharyar Naseer
+Copyright (c) 2022 Akshay Karode
 
 MIT License
 
