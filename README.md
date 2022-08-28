@@ -6,11 +6,10 @@ Setup Local
 4. $ npm install
 5. $ ./mongo-sync pull // Make sure to start VPN if required by remote database. 
 
-Ref : https://www.code4it.dev/blog/run-mongodb-on-docker
+> Ref : https://www.code4it.dev/blog/run-mongodb-on-docker
+> Inspired by : https://github.com/sheharyarn/mongo-sync
 
 =================================================================================
-
-> Inspired by : https://github.com/sheharyarn/mongo-sync
 
 ## Usage
 
